@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+
+    <style>
+
+        /* RESET */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* BODY */
+        body{
+            background-color: rgb(160, 96, 12);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* HEADER */
+        header{
+            background-color: rgb(227, 65, 11);
+            padding: 20px;
+            position: relative;
+        }
+
+        header h1{
+            text-align: center;
+            color: white;
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        /* IMAGEN */
+        header img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            left: 20px;
+            top: 15px;
+        }
+
+        /* NAV */
+        nav{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: white;
+            padding: 8px 12px;
+            transition: 0.3s;
+            font-size: 20px;
+        }
+
+        nav a:hover{
+            color: black;
+        }
+
+        /* TITULOS */
+        body h1{
+            color: white;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* LISTAS */
+        ol,
+        ul{
+            background-color: rgb(227, 65, 11);
+            width: 40%;
+            margin: 20px auto;
+            padding: 25px;
+            border-radius: 15px;
+            border: 3px solid rgb(43, 42, 42);
+            color: white;
+            font-size: 22px;
+        }
+
+        /* ITEMS */
+        li{
+            margin: 12px 0;
+            padding: 5px;
+        }
+
+        /* LINEA */
+        hr{
+            border: 2px solid white;
+            width: 70%;
+            margin: 30px auto;
+        }
+
+        /* ---------------- RESPONSIVE ---------------- */
+
+        /* TABLET */
+        @media (max-width: 900px){
+
+            header img{
+                position: static;
+                display: block;
+                margin: auto;
+            }
+
+            header h1{
+                font-size: 32px;
+                margin-top: 15px;
+            }
+
+            nav{
+                margin-top: 20px;
+            }
+
+            ol,
+            ul{
+                width: 70%;
+                font-size: 20px;
+            }
+        }
+
+        /* CELULAR */
+        @media (max-width: 600px){
+
+            header{
+                text-align: center;
+            }
+
+            header h1{
+                font-size: 26px;
+            }
+
+            nav{
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+            nav a{
+                font-size: 18px;
+            }
+
+            ol,
+            ul{
+                width: 90%;
+                font-size: 18px;
+                padding: 20px;
+            }
+
+            body h1{
+                font-size: 28px;
+            }
+
+            hr{
+                width: 90%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="./img/images.png" alt="">
+
+        <h1>Introduccion etiquetas HTML</h1>
+
+        <nav>
+            <a href="contenedor.html">Contenedor</a>
+            <a href="lista.html">Listas</a>
+            <a href="tabla.html">Tablas</a>
+            <a href="formulario.html">Formulario</a>
+            <a href="boostrap.html">Boostrap</a>
+            <a href="portafolio.html">Portfolio</a>
+            <a href="index.html">Inicio</a>
+        </nav>
+    </header>
+
+    <h1>Lista ordenada</h1>
+
+    <ol>
+        <li>Orden 1</li>
+        <li>Orden 2</li>
+        <li>Orden 3</li>
+    </ol>
+
+    <hr>
+
+    <h1>Lista desordenada</h1>
+
+    <ul>
+        <li>Orden 1</li>
+        <li>Orden 2</li>
+        <li>Orden 3</li>
+    </ul>
+
+</body>
+</html>

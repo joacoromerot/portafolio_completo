@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenedor</title>
+    
+    <style>
+        .c1{
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            margin-left: 500px;
+            text-align: center;
+            border-radius: 50%;
+        }
+
+             .c2{
+            background-color: rgb(58, 57, 105);
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            text-align: center;
+            border-radius: 50%;
+            padding: 5px;
+            }
+
+            .c3{
+                
+            background-color: rgb(64, 64, 65);
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            text-align: center;
+            border-radius: 50%;
+            padding: 5px;
+            margin-left: 1000px;
+            }
+
+            .contpadre{
+                background-color: cadetblue;
+                position: relative;
+            }
+
+            .hijo1{
+                background-color: violet;
+                width: 120px;
+                height: 120px;
+                border: 2px solid black;
+                position: absolute;
+                top:-300px;
+                left:500px;
+            }
+
+            .hijo2{
+                background-color: rgb(218, 199, 218);
+                width: 120px;
+                height: 120px;
+                border: 2px solid black;
+                margin-left: 500px;
+                
+            }
+
+            img{
+                width: 120px;
+                height: 120px;
+            }
+
+            header{
+                background-color: orangered;
+                position: relative;
+                font-size: 30px;
+            }
+
+            h1{
+                color: white;
+                text-align: center;
+            }
+
+            header img{
+                border-radius: 50%;
+                position: absolute;
+            }
+
+            nav a {
+                text-decoration: none;
+                color: white;
+            }
+            nav{
+                margin-left: 280px;
+            }
+            body{
+                background-color: rgb(124, 79, 63);
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./img/images.png" alt="">
+        <h1>Introduccion etiquetas HTML</h1>
+        <nav>
+            <a href="contenedor.html">Contenedor</a>
+            <a href="lista.html">Listas</a>
+            <a href="tabla.html">Tablas</a>
+            <a href="formulario.html">Formulario</a>
+            <a href="boostrap.html">Boostrap</a>
+            <a href="portafolio.html">Portfolio</a>
+            <a href="index.html">Inicio</a>
+        </nav>
+    </header>
+    <h1>Modelado de caja</h1>
+
+    <div class="c1">
+        <p>Contenedor centro</p>
+        <h2>Ejemplo caja</h2>
+    </div>
+    <div class="c2">
+        <p>Contenedor izquierda</p>
+    </div>
+    <div class="c3">
+        <p>Contenedor derecha</p>
+    </div>
+    <div class="contpadre">
+        <h2>Contenedor padre</h2>
+        <div class="hijo1">
+            <img src="./img/images.png" alt="">
+        </div>
+        <div class="hijo2">
+            <h2>Contenedor Hijo </h2>
+        </div>
+    </div>
+</body>
+</html>

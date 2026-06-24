@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        form{
+            background-color: gray;
+            margin-left: 500px;
+            width: 350px;
+            height: 250px;
+            margin-top: 15px;
+            border: 2px solid white;
+            box-shadow: 0 5px 8px black;
+        }
+
+        form h1{
+            color: wheat;
+            text-align: center;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        form label{
+            color:wheat;
+        }
+
+        form button{
+            background-color: orangered;
+            color: white;
+            font-size: 20px;
+            margin-left: 100px;
+            padding: 5px;
+        }
+    .mensaje{
+        color: rgb(39, 38, 38);
+        margin-left: 450px;
+        
+        
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./img/images.png" alt="">
+        <h1>Introduccion etiquetas HTML</h1>
+        <nav>
+            <a href="contenedor.html">Contenedor</a>
+            <a href="lista.html">Listas</a>
+            <a href="tabla.html">Tablas</a>
+            <a href="formulario.html">Formulario</a>
+            <a href="boostrap.html">Boostrap</a>
+            <a href="portafolio.html">Portfolio</a>
+            <a href="index.html">Inicio</a>
+        </nav>
+    </header>
+    
+    <form>
+        <h1>Formulario </h1>
+        <label for="">Nombre</label>
+        <input type="text" id="nombre" placeholder="NOMBRE"><br>
+        <label for="">Apellido</label>
+        <input type="text" id="apellido" placeholder="Apellido"><br>
+        <label for="">Edad</label>
+        <input type="text" id="edad"><br>
+        <label for="">Email</label>
+        <input type="email" name="" id="email"><br>
+        <label for="">Fecha de nacimiento</label>
+        <input type="datetime-local" name="" id="fecha"><br>
+        <label for="">Genero</label>
+        <input type="checkbox" name="" id="hombre">Masculino
+        <input type="checkbox" name="" id="mujer">Femenino
+        <br>
+        <label for="">Programador</label>
+        <select name="" id="opcion">
+            <option value="">Eliga una opcion</option>
+            <option value="Des Frontend">Des FRONTEND</option>
+            <option value="Des backend">Des BACKEND</option>
+            <option value="LIDER">Lider de equipo</option>
+            <option value="SENIOR PYTHON">Senior PYTHON</option>
+        </select><br><br>
+        <input type="button" value="Guardar" onclick="guardar()">
+        
+    </form>
+    <br><br>
+    
+    <section class="mensaje" id="mensaje">
+
+    </section>
+
+</body>
+</html>
+
+<script>
+function guardar(){
+    let nombre= document.getElementById("nombre").value;
+    let apellido= document.getElementById("apellido").value;
+    let edad= document.getElementById("edad").value;
+    let email= document.getElementById("email").value;
+    let fecha= document.getElementById("fecha").value;
+    let opcion= document.getElementById("opcion").value;
+    document.getElementById("mensaje").innerHTML = 
+    "Bienvenido"+ nombre + apellido + "<br/> " + edad + "<br/>" + email 
+    + "<br/>" + fecha + "<br/>" + opcion;
+   
+}
+</script>

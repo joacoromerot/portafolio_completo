@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi carrera en el básquet</title>
+
+  <!-- Bootstrap 5 (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Tipografías: Orbitron (display HUD/futurista) + Inter (texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar navbar-expand-lg sticky-top cancha-nav">
+    <div class="container">
+      <a class="navbar-brand" href="#inicio">Mi carrera <span class="brand-dot">●</span></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#mi-carrera">Mi carrera</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== INICIO (HERO) ===================== -->
+  <header id="inicio" class="hero">
+    <div class="court-lines" aria-hidden="true"></div>
+    <div class="scanline" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">TEMPORADA 2026 — ACTUALIDAD</p>
+      <h1 class="reveal"><span class="glitch-in">Mi carrera<br><span class="hero-accent">en el básquet</span> 🏀</span></h1>
+      <p class="hero-sub reveal">mi carrera en el básquet</p>
+
+      <!-- Scoreboard / marcador con números animados -->
+      <div class="scoreboard reveal">
+        <div class="score-cell">
+          <span class="score-num" data-target="13">0</span>
+          <span class="score-label">años jugando</span>
+        </div>
+        <div class="score-divider">—</div>
+        <div class="score-cell">
+          <span class="score-num" data-target="3">0</span>
+          <span class="score-label">clubes</span>
+        </div>
+        <div class="score-divider">—</div>
+        <div class="score-cell">
+          <span class="score-num" data-target="2">0</span>
+          <span class="score-label">título</span>
+        </div>
+        <span class="terminal-cursor" aria-hidden="true">_</span>
+      </div>
+    </div>
+
+    <a href="#mi-carrera" class="scroll-hint" aria-label="Bajar a la sección Mi carrera">
+      <span class="ball-bounce">🏀</span>
+    </a>
+  </header>
+
+  <!-- ===================== MI CARRERA ===================== -->
+  <section id="mi-carrera">
+    <div class="container">
+
+      <div class="titulo-seccion reveal">
+        <p class="seccion-eyebrow">PLANILLA DE JUEGO</p>
+        <h2>Lo que hice en cada club</h2>
+      </div>
+
+      <!-- ===================== LÍNEA DE TIEMPO ===================== -->
+      <div class="timeline reveal">
+
+        <div class="timeline-item">
+          <div class="timeline-dot timeline-dot-inicio"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2009</span>
+            <h6 class="timeline-title">Nacimiento</h6>
+            <p class="timeline-text"></p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot timeline-dot-inicio"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2013</span>
+            <h6 class="timeline-title">Arranco a jugar en Hindú</h6>
+            <p class="timeline-text">A los 4 años, mis primeros pasos en el básquet.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot timeline-dot-hindu"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2024</span>
+            <h6 class="timeline-title">Dejo Hindú</h6>
+            <p class="timeline-text">Me voy después de 11 años. 2 títulos en el club de mi infancia.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot timeline-dot-racing"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2024</span>
+            <h6 class="timeline-title">Me voy a Racing</h6>
+            <p class="timeline-text">Salto a primera categoría y primer provincial.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot timeline-dot-racing"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2025</span>
+            <h6 class="timeline-title">Me voy de Racing</h6>
+            <p class="timeline-text">Dejo el club donde viví las mejores experiencias.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot timeline-dot-talleres"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2025</span>
+            <h6 class="timeline-title">Talleres</h6>
+            <p class="timeline-text">Me voy a Talleres por la pasión que le tengo.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot timeline-dot-talleres"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2026</span>
+            <h6 class="timeline-title">Talleres</h6>
+            <p class="timeline-text">Sigo jugando, hasta hoy.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row g-4">
+
+        <!-- ===================== CLUB 1: HINDÚ CLUB (4 a 15 años) ===================== -->
+        <div class="col-md-4">
+          <div class="card card-club club-hindu h-100 reveal">
+
+            <div class="club-stripe stripe-hindu"></div>
+
+            <div id="carouselHindu" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/hindu.jpeg" alt="Foto 1 - Hindú Club">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/hindu_2.jpeg" alt="Foto 2 - Hindú Club">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/hindu_3.jpeg" alt="Foto 3 - Hindú Club">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselHindu" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselHindu" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+
+            <div class="card-body">
+              <div class="card-top-row">
+                <h5 class="card-title">Hindú Club</h5>
+                <span class="years-tag">11 AÑOS</span>
+              </div>
+              <span class="badge bg-club mb-2">4 a 15 años</span>
+              <p class="card-text">
+                En este club empecé mi carrera como basquetbolista y viví 11 años en este club,
+                y fueron los mejores 11 años de mi vida. Hice muchos amigos, saqué muchas técnicas
+                y mejoré mi estilo de juego, además de aprender cómo formarme para ser el mejor en cada club en el que esté,
+                y también lo bueno es que gané 2 títulos con el club de mi infancia.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===================== CLUB 2: RACING CLUB (15 a 16 años) ===================== -->
+        <div class="col-md-4">
+          <div class="card card-club club-racing h-100 reveal">
+
+            <div class="club-stripe stripe-racing"></div>
+
+            <div id="carouselRacing" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/racing.jpeg" alt="Foto 1 - Racing Club">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/racing_2.jpeg" alt="Foto 2 - Racing Club">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/racing_3.jpeg" alt="Foto 3 - Racing Club">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselRacing" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselRacing" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+
+            <div class="card-body">
+              <div class="card-top-row">
+                <h5 class="card-title">Racing Club</h5>
+                <span class="years-tag">1 AÑO</span>
+              </div>
+              <span class="badge bg-club mb-2">15 a 16 años</span>
+              <p class="card-text">
+                En este club fue mi primera experiencia jugando en la primera categoría
+                de la liga de Córdoba, y me ayudó a ser más responsable a la hora de ir a entrenar
+                y exigirme el doble, porque la categoría te lo pide, y a sacar técnicas para
+                que otros clubes me vieran. También jugué mi primer provincial, que fue lo
+                que me dejó con ganas de volver a jugar. Pero lo malo es que estuve muy poco tiempo
+                y no pude aprovechar Racing Club para fortalecer mi juego al máximo, y también
+                me fui por algunos problemas.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===================== CLUB 3: TALLERES (16 a 17 años, actualidad) ===================== -->
+        <div class="col-md-4">
+          <div class="card card-club club-talleres h-100 reveal">
+
+            <div class="club-stripe stripe-talleres"></div>
+
+            <div id="carouselTalleres" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/talleres.jpeg" alt="Foto 1 - Talleres">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/talleres_2.jpeg" alt="Foto 2 - Talleres">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/talleres_3.jpeg" alt="Foto 3 - Talleres">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselTalleres" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselTalleres" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+
+            <div class="card-body">
+              <div class="card-top-row">
+                <h5 class="card-title">Talleres</h5>
+                <span class="years-tag">1 AÑO</span>
+              </div>
+              <span class="badge bg-club mb-2">16 a 17 años · Actualidad</span>
+              <p class="card-text">
+                En este club hace 1 año que estoy jugando, y lo elegí porque desde los 4 años soy hincha
+                por mi viejo, y también porque vi cómo el club iba mejorando. También por los objetivos que tienen,
+                que de a poco los estamos superando, y por lo unidos que son en ese club. Lo que me gusta
+                es que cada día el club crece y yo crezco con él. Espero no dejarlo nunca, pero si algún día lo hago,
+                lo voy a hacer feliz, porque aporté en ese club todo lo que pude y los ayudé a cumplir sus objetivos.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Bootstrap JS (necesario para que funcionen la navbar y los carruseles) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
